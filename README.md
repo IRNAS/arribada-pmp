@@ -1,6 +1,6 @@
 # Arribada Penguin Monitoring Platform
 
-Arribada Penguin Monitoring Platform is a standalone device featuring a Raspberry Pi and a Raspberry Pi Camera Module. These user-instructions define the use-case of the device and serve as the guideline for development and creating the software support requirements.
+Arribada Penguin Monitoring Platform (APMP) is a standalone device featuring a Raspberry Pi and a Raspberry Pi Camera Module. These user-instructions define the use-case of the device and serve as the guideline for development and creating the software support requirements.
 
 <img
 src="/pics/IMG_20180122_102543_01.jpg"  width="500px" height="375px">
