@@ -90,7 +90,7 @@ Attach the other mount using the other set of clamp jaws, spring washers and nut
 src="/pics/IMG_20180122_101352.jpg"  width="400px" height="300px">
 
 
-Attach the NANUK camera case and solar panels and secure it with screws on the camera case and solar panels as seen in the picture.
+Attach the NANUK camera case and solar panels and secure them with screws on the camera case and solar panels as seen in the picture.
 
 <img
 src="/pics/IMG_20180122_101625.jpg"  width="400px" height="300px">
