@@ -58,7 +58,7 @@ Device consists of:
 ## Mounting
 
 The Arribada Penguin Monitoring Platform features:
-* NANUK camera case
+* camera case
 * solar panels
 * 2 mounts with clamp jaws and screws
 
