@@ -87,13 +87,13 @@ src="/pics/IMG_20180122_100959.jpg"  width="400px" height="300px"></span>
 Attach the other mount using the other set of clamp jaws, spring washers and nuts. 
 
 <img
-src="/pics/IMG_20180122_101352.JPG"  width="400px" height="300px">
+src="/pics/IMG_20180122_101352.jpg"  width="400px" height="300px">
 
 
 Attach the NANUK camera case and solar panels and secure it with screws on the camera case and solar panels as seen in the picture.
 
 <img
-src="/pics/IMG_20180122_101625.JPG"  width="400px" height="300px">
+src="/pics/IMG_20180122_101625.jpg"  width="400px" height="300px">
 
 <span><img
 src="/pics/IMG_20180122_101707.jpg"  width="400px" height="300px">
@@ -112,4 +112,4 @@ src="/pics/IMG_20180122_102009.jpg"  width="400px" height="300px"></span>
 Connect the solar panels to the camera case. Use the supplied extension cables if necessary.
 
 <img
-src="/pics/IMG_20180122_102318.JPG"  width="400px" height="300px">
+src="/pics/IMG_20180122_102318.jpg"  width="400px" height="300px">
