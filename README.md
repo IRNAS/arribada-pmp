@@ -113,3 +113,20 @@ Connect the solar panels to the camera case. Use the supplied extension cables i
 
 <img
 src="/pics/IMG_20180122_102318.jpg"  width="400px" height="300px">
+
+## Software
+The system operates the PiRa-zero-firmware https://github.com/IRNAS/PiRA-zero-firmware to implement all functions on Raspbian distribution, follow the repository for details of operation and configuration parameters.
+
+### Turning on
+By turning on the device (on switch) will boot and operate based on setting located in `/boot/config.env` and wake up at a defined interval. If the debug switch is on, the device will boot and create the wifi network about 90s after the next boot (based on schedule). Log in to the wifi and by accessing: http://172.22.0.1 you can visit the web interface and browse photos and videos. If debug is turned off while device is int he on cycle, then it will complete it and turn off and resume scheduled operation.
+
+The following steps are suggested for installing the unit:
+ * Turn on Power and Debug switches
+ * Wait 90s
+ * Conect to WiFi with settings as in `/boot/config.env`
+ * Browse the latest photo to check it
+ * Turn the debug switch off
+ * The device will operate as configured
+
+
+
