@@ -2,9 +2,12 @@
 
 Arribada Penguin Monitoring Platform (APMP) is a standalone device featuring a Raspberry Pi and a Raspberry Pi Camera Module. These user-instructions define the use-case of the device and serve as the guideline for development and creating the software support requirements.
 
-<img
-src="/pics/IMG_20180122_102543_01.jpg"  width="500px" height="375px">
+<img src="/pics/apmp.png"  width="850px">
 
+<img src="/pics/apmp-1.png" width="425"> <img src="/pics/apmp-2.jpg"  width="425">   
+
+<img src="/pics/antarctica-apmp.jpg"  width="850px">
+*Copyright: The Arribada Initiative*
 
 Device consists of:
  * Camera unit:
@@ -84,7 +87,7 @@ src="/pics/IMG_20180122_100918.jpg"  width="400px" height="300px">
 src="/pics/IMG_20180122_100959.jpg"  width="400px" height="300px"></span>
 
 
-Attach the other mount using the other set of clamp jaws, spring washers and nuts. 
+Attach the other mount using the other set of clamp jaws, spring washers and nuts.
 
 <img
 src="/pics/IMG_20180122_101352.jpg"  width="400px" height="300px">
@@ -127,6 +130,3 @@ The following steps are suggested for installing the unit:
  * Browse the latest photo to check it
  * Turn the debug switch off
  * The device will operate as configured
-
-
-
