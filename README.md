@@ -7,7 +7,8 @@ Arribada Penguin Monitoring Platform (APMP) is a standalone device featuring a R
 <img src="/pics/apmp-1.png" width="425"> <img src="/pics/apmp-2.jpg"  width="425">   
 
 <img src="/pics/antarctica-apmp.jpg"  width="850px">
-_Copyright: The Arribada Initiative_
+
+*Copyright: The Arribada Initiative*
 
 Device consists of:
  * Camera unit:
