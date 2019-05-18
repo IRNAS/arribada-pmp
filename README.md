@@ -94,4 +94,9 @@ Device consists of:
     * Pole (round or square) up to 50mm in diameter
     * Metric wrench size 13
     * Compass and tilt measuring device for pointing the solar panels
+    
+ ## Key desing considerations
+ * Battery protection consider LC05111CMT for every 2 cells in parallel
+ * Consider battery low temperature charge cutoor toprotect cells in winter
+ 
 
