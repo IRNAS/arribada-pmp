@@ -13,7 +13,9 @@ Arribada Penguin Monitoring Platform (APMP) is a standalone device featuring a R
   * Ultrasonic distance
   * Temperatures
   * GPS - location
-* Solar charging
+* Power:
+  * Batteries
+  * Solar charging
 * USB flash drive - user removable - contains all images and other captured data
   * contains images/videos
   * contains json with settings
