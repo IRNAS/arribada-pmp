@@ -76,10 +76,12 @@ Device consists of:
     * Pira Smart V2 integrated board with battery mounts
     * 6x 18650 LiPo Cell 2900mAh/4.2V
     * Nanuk NANO 330 waterproof enclosure
+    * I2C display for status
+    * 2x user button
  * Optional:
     * Flash
     * Lora antenna
-    * Rockblock Iridium
+    * Rockblock Iridium or Lacuna module
     * Ultrasonic sensor
     * Thermometer
  * Solar power:
