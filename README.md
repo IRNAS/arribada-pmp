@@ -1,8 +1,9 @@
 # Arribada Penguin Monitoring Platform - v2 - development
+<img src="https://github.com/IRNAS/arribada-pmp/blob/development-v2/4_DOC/irnas_logo.png" height="100">
 
 Arribada Penguin Monitoring Platform (APMP) is a standalone device featuring a Raspberry Pi and a Raspberry Pi Camera Module with a number of additonal features. The below image is of previous version to form the list of necessary changes.
 
-<img src="/pics/apmp.png"  width="850px">
+<img src="https://github.com/IRNAS/arribada-pmp/blob/development-v2/pics/DSC_4310.JPG"  width="850px">
 
 
 ## Key user features - v2
