@@ -195,7 +195,15 @@ UniqueID=C160DFE3-245C-4FDC-8B1E-D76605690A63
 Description=BASIC
 AllowFabrication=0
 ParameterCount=2
-VariationCount=0
+VariationCount=8
+Variation1=Designator=R38|UniqueId=\ITYSUDAK\WNWEOPWJ|Kind=1|AlternatePart= 
+Variation2=Designator=R39|UniqueId=\ITYSUDAK\YWJBQTUG|Kind=1|AlternatePart= 
+Variation3=Designator=R42|UniqueId=\ITYSUDAK\ECFOWYUX|Kind=1|AlternatePart= 
+Variation4=Designator=R44|UniqueId=\ITYSUDAK\VFAESYBG|Kind=1|AlternatePart= 
+Variation5=Designator=L4|UniqueId=\ICDLEQVR|Kind=1|AlternatePart= 
+Variation6=Designator=L3|UniqueId=\EVRVTPKV|Kind=1|AlternatePart= 
+Variation7=Designator=R35|UniqueId=\ITYSUDAK\KFXCBFLC|Kind=1|AlternatePart= 
+Variation8=Designator=R34|UniqueId=\ITYSUDAK\TRTNYZMK|Kind=1|AlternatePart= 
 ParamVariationCount=0
 
 [Parameter2_1]
@@ -215,32 +223,32 @@ DocumentPath=Project Outputs\Design Rule Check - Arribada-PMP-PCB.html
 DItemRevisionGUID=
 
 [Parameter1]
-Name=Company
-Value=IRNAS
+Name=Website
+Value=URL
 
 [Parameter2]
-Name=CreateDate
-Value=13.09.2019
+Name=Version
+Value=V1.1
 
 [Parameter3]
-Name=PCBDesigner
-Value=Tadej Plej
+Name=RevisionDate
+Value=14.11.2019
 
 [Parameter4]
 Name=ProjectTitle
 Value=Arribada PMP
 
 [Parameter5]
-Name=RevisionDate
-Value=dd.mm.yyyy
+Name=PCBDesigner
+Value=Tadej Plej
 
 [Parameter6]
-Name=Version
-Value=V0.1
+Name=CreateDate
+Value=13.09.2019
 
 [Parameter7]
-Name=Website
-Value=URL
+Name=Company
+Value=IRNAS
 
 [Configuration1]
 Name=Default Configuration
@@ -297,7 +305,7 @@ OutputDir=Project Outputs
 [OutputGroup1]
 Name=Netlist Outputs
 Description=
-TargetPrinter=Canon MB2000 series Printer WS
+TargetPrinter=Canon MB2100 series Printer
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=PCADNetlist
 OutputName1=PCAD Netlist
@@ -531,7 +539,7 @@ PageOptions10=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|Print
 [OutputGroup4]
 Name=Assembly Outputs
 Description=
-TargetPrinter=Canon MB2000 series Printer WS
+TargetPrinter=Canon MB2100 series Printer
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Assembly
 OutputName1=Assembly Drawings
@@ -553,7 +561,7 @@ OutputDefault3=0
 [OutputGroup5]
 Name=Fabrication Outputs
 Description=
-TargetPrinter=Canon MB2000 series Printer WS
+TargetPrinter=Canon MB2100 series Printer
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=CompositeDrill
 OutputName1=Composite Drill Drawing
@@ -625,7 +633,7 @@ OutputDefault12=0
 [OutputGroup6]
 Name=Report Outputs
 Description=
-TargetPrinter=Canon MB2000 series Printer WS
+TargetPrinter=Canon MB2100 series Printer
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Script
 OutputName1=Script Output
@@ -676,7 +684,7 @@ OutputDefault6=0
 [OutputGroup7]
 Name=Other Outputs
 Description=
-TargetPrinter=Canon MB2000 series Printer WS
+TargetPrinter=Canon MB2100 series Printer
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Text Print
 OutputName1=Text Print
@@ -856,7 +864,7 @@ PageOptions29=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|Print
 [OutputGroup8]
 Name=Validation Outputs
 Description=
-TargetPrinter=Canon MB2000 series Printer WS
+TargetPrinter=Canon MB2100 series Printer
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Design Rules Check
 OutputName1=Design Rules Check
@@ -900,7 +908,7 @@ OutputDefault7=0
 [OutputGroup9]
 Name=Export Outputs
 Description=
-TargetPrinter=Canon MB2000 series Printer WS
+TargetPrinter=Canon MB2100 series Printer
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=AutoCAD dwg/dxf PCB
 OutputName1=AutoCAD dwg/dxf File PCB
@@ -961,7 +969,7 @@ OutputDefault11=0
 [OutputGroup10]
 Name=PostProcess Outputs
 Description=
-TargetPrinter=Canon MB2000 series Printer WS
+TargetPrinter=Canon MB2100 series Printer
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Copy Files
 OutputName1=Copy Files
