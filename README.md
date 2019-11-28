@@ -1,24 +1,94 @@
-# Arribada Penguin Monitoring Platform
+# Arribada Penguin Monitoring Platform - v2 - development
+<img src="https://github.com/IRNAS/arribada-pmp/blob/development-v2/4_DOC/irnas_logo.png" height="100">
 
-Arribada Penguin Monitoring Platform (APMP) is a standalone device featuring a Raspberry Pi and a Raspberry Pi Camera Module. These user-instructions define the use-case of the device and serve as the guideline for development and creating the software support requirements.
+Arribada Penguin Monitoring Platform (APMP) is a standalone device featuring a Raspberry Pi and a Raspberry Pi Camera Module with a number of additonal features. The below image is of previous version to form the list of necessary changes.
 
-<img src="/pics/apmp.png"  width="850px">
+<img src="https://github.com/IRNAS/arribada-pmp/blob/development-v2/pics/DSC_4310.JPG"  width="850px">
 
-<img src="/pics/apmp-1.png" width="425"> <img src="/pics/apmp-2.jpg"  width="425">   
+## Block diagram
+Block diagram below shows the key features of Arribada PMP device. Device captures photos or video, measure temperature, humidity and air pressure, capture locations and charge batteries with solar cells. Penguin Monitoring Platform can communicates with LoRa and Rock Block or Lacuna.
+<img src="https://github.com/IRNAS/arribada-pmp/blob/development-v2/4_DOC/Arribada_PMP_block_diagram.png"  width="700px">
 
-<img src="/pics/antarctica-apmp.jpg"  width="850px">
 
-*Copyright: The Arribada Initiative*
+## Key user features - v2
+* Capture image/video at defined intervals
+* Report system status/sensors via Lora (optional)
+* Report system status/sensors via RockBlock Iridium (optional)
+* Optional sensors:
+  * Ultrasonic distance
+  * Temperatures
+  * GPS - location
+* Power:
+  * Batteries
+  * Solar charging
+* USB flash drive - user removable - contains all images and other captured data
+  * contains images/videos
+  * contains json with settings
+* SD card with OS is read-only and not to be removed
+* on/off switch
+* 2x push button
+  * button 1: test mode - push to turn on the system for 10 minutes
+  * button 2: general purpose
+* Test mode:
+  * WiFi enabled, user can connect and check camera image or download all images
+  * Each time test mode is enabled an image is taken.
+* Bluetooth:
+  * System status printout
+  * Enable test mode
+  * Configure settings
+* Lora:
+  * Enable test mode 
+  * Configure settings
+  * LacunaSpace communication
+ 
+## Key user stories - v2
+1. Penguin camera - Install on a pole in Antarctica. Arrive at location and turn on. Push button for test mode. See images via WiFi on smartphone or leave running and remove USB. To check camera alignment and correct operation. Leave device running for year or more, come pack and swap USB flash drive. Meanwhile real-time reporting via Lora or Lacuna, each day.
+1. River camera - Install above a river with ultrasonic sensor and optional rockblock connection. Once above river enable the test mode via bluetooth. Check via WiFi the alignment and operation. Leave running and get real time sensor data. retrieve in a year to get back the photos.
+1. TBD
+
+## Configurable parameters - settings - v2
+All the setings are defined as Environmental vairables in Linux, settings are changed using one of the following methods: json file present on the USB flash drive, system auto-updates values from it, via lora or via Balena if used
+
+* User definable parameters:
+ * capture schedule per month:
+   * start time (UTC) - daily - fixed hour or `sunrise` (default 0:00)
+   * end time (UTC) - daily - fixed hour or `sunset`(default 23:59)
+   * interval (in minutes) - 0 to 24*60 (default 60)
+ * location (automatic if GPS present):
+   * lat (used for sunrise/sunset calculation)
+   * lon (used for sunrise/sunset calculation)
+ * capture type:
+   * image
+    * flash config
+   * video
+ * pira variables:
+   * all timer values and defaults
+   * lora parameters
+   * rockblock parameters
+   * sensor reporting interval
+ * battery settings:
+   * empty: default 10% - do not wake up the RPi below that
+   * low-battery: default 30% - wake up only once a day
+   * normal: general operation
+
+## Specification
 
 Device consists of:
  * Camera unit:
     * Raspberry Pi Zero W
     * Raspberry Pi Camera Module V2
-    * Samsung EVO Plus 64GB microSD card
-    * Pira Zero V3
+    * Sandisk 16GB microSD card
+    * Pira Smart V2 integrated board with battery mounts
     * 6x 18650 LiPo Cell 2900mAh/4.2V
     * Nanuk NANO 330 waterproof enclosure
-    * Multi-directional camera mount
+    * I2C display for status
+    * 2x user button
+ * Optional:
+    * Flash
+    * Lora antenna
+    * Rockblock Iridium or Lacuna module
+    * Ultrasonic sensor
+    * Thermometer
  * Solar power:
     * 2x Voltaic Systems 6V 6W solar panel
     * 2x Voltaic Systems solar panel extension cable
@@ -26,108 +96,31 @@ Device consists of:
  * Accessories
     * Allen-key tool for mounting
     * SD to microSD adapter
+ * Mounting:
+   * Simple strap mount (default)
+   * Advanced KORUZA mount (optional)
  * Additionally required and not included
     * Pole (round or square) up to 50mm in diameter
     * Metric wrench size 13
     * Compass and tilt measuring device for pointing the solar panels
+    
+ ## Key desing considerations
+ * Battery protection consider LC05111CMT for every 2 cells in parallel
+ * Consider battery low temperature charge cutoor toprotect cells in winter
 
+## License
 
-## Key user features
- * Captures photos and videos in Full HD resolution
- * Configurable time-interval
- * Autonomous operation for 356 days with no charge
- * Adaptive adjustment of capture cycle if extra power is available
+All our projects are as usefully open-source as possible.
 
+Hardware including documentation is licensed under [CERN OHL v.1.2. license](http://www.ohwr.org/licenses/cern-ohl/v1.2)
 
-## Primary use-case scenario
- * Charge the device from mains power via microUSB connection (up to 24h with 1A 5V USB charger)
- * Configure the preferred capture cycle based on the date for example:
-   * month / morning / evening / interval
-     * January / sunrise / sunset / 1h
-     * February / 05:00 / 18:00 / 30min
-     * March / sunrise / 15:00 / 2h
-     * April / 12:00 / 13:00 / 1min `unit does not sleep in this case`
- * Deploy the device on-site
-   * Connect solar panels
-   * Turn the power switch on
-   * Turn the debug switch on
-   * Unit is on and WiFi appears
-     * Recent image seen on web
-   * Turn debug switch off, unit then operates normally
- * Unit or microSD card is retrieved/replaced
-   * Connect the SD card to Windows and copy images
-   * Change or modify the capture cycle or other parameters in config file
+Firmware and software originating from the project is licensed under [GNU GENERAL PUBLIC LICENSE v3](http://www.gnu.org/licenses/gpl-3.0.en.html).
 
+Open data generated by our projects is licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/legalcode).
 
-## Mounting
+All our websites and additional documentation are licensed under [Creative Commons Attribution-ShareAlike 4 .0 Unported License](https://creativecommons.org/licenses/by-sa/4.0/legalcode).
 
-The Arribada Penguin Monitoring Platform features:
-* camera case
-* solar panels
-* 2 mounts with clamp jaws and screws
+What this means is that you can use hardware, firmware, software and documentation without paying a royalty and knowing that you'll be able to use your version forever. You are also free to make changes but if you share these changes then you have to do so on the same conditions that you enjoy.
 
-<span><img
-src="/pics/IMG_20180122_100336.jpg"  width="400px" height="300px">
-<img
-src="/pics/IMG_20180122_095626.jpg"  width="400px" height="300px"></span>
-
-
-To mount the APMP to pole, first take mount, clamp jaws and screws. Insert the four screws through the holes of the mount and the first two clamp jaws.
-
-<span><img
-src="/pics/IMG_20180122_100502.jpg"  width="400px" height="300px">
-<img
-src="/pics/IMG_20180122_100640.jpg"  width="400px" height="300px"></span>
-
-
-Attach the mount on the pole using the other two clamp jaws, spring washers and nuts. Tighten the nuts using a 13mm wrench.
-
-<span><img
-src="/pics/IMG_20180122_100918.jpg"  width="400px" height="300px">
-<img
-src="/pics/IMG_20180122_100959.jpg"  width="400px" height="300px"></span>
-
-
-Attach the other mount using the other set of clamp jaws, spring washers and nuts.
-
-<img
-src="/pics/IMG_20180122_101352.jpg"  width="400px" height="300px">
-
-
-Attach the camera case and solar panels and secure them with screws on the camera case and solar panels with 4mm Allen key as seen in the picture.
-
-<img
-src="/pics/IMG_20180122_101625.jpg"  width="400px" height="300px">
-
-<span><img
-src="/pics/IMG_20180122_101707.jpg"  width="400px" height="300px">
-<img
-src="/pics/IMG_20180122_101738.jpg"  width="400px" height="300px"></span>
-
-
-Set the desired angle for the camera case and solar panels and secure them in place with two screws on each mount with 4mm Allen key as seen in the picture.
-
-<span><img
-src="/pics/IMG_20180122_102104.jpg"  width="400px" height="300px">
-<img
-src="/pics/IMG_20180122_102009.jpg"  width="400px" height="300px"></span>
-
-
-Connect the solar panels to the camera case. Use the supplied extension cables if necessary.
-
-<img
-src="/pics/IMG_20180122_102318.jpg"  width="400px" height="300px">
-
-## Software
-The system operates the PiRa-zero-firmware https://github.com/IRNAS/PiRA-zero-firmware to implement all functions on Raspbian distribution, follow the repository for details of operation and configuration parameters.
-
-### Turning on
-By turning on the device (on switch) will boot and operate based on setting located in `/boot/config.env` and wake up at a defined interval. If the debug switch is on, the device will boot and create the wifi network about 90s after the next boot (based on schedule). Log in to the wifi and by accessing: http://172.22.0.1 you can visit the web interface and browse photos and videos. If debug is turned off while device is int he on cycle, then it will complete it and turn off and resume scheduled operation.
-
-The following steps are suggested for installing the unit:
- * Turn on Power and Debug switches
- * Wait 90s
- * Conect to WiFi with settings as in `/boot/config.env`
- * Browse the latest photo to check it
- * Turn the debug switch off
- * The device will operate as configured
+Koruza, GoodEnoughCNC and IRNAS are all names and marks of Institut IRNAS Race. 
+You may use these names and terms only to attribute the appropriate entity as required by the Open Licences referred to above. You may not use them in any other way and in particular you may not use them to imply endorsement or authorization of any hardware that you design, make or sell.
