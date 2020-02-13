@@ -1,4 +1,4 @@
-# Arribada PMP - Instructions
+# Arribada PMP v1.1 - instruction manual
 
 ## Description of operation
 When the device is turned on and running, it will periodically enable and disable 5V power supply for Raspberry Pi module.
