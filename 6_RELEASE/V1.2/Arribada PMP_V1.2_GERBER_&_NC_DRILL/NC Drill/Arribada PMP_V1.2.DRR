@@ -1,0 +1,28 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: Arribada-PMP-PCB.PcbDoc   09/02/2021  15:01:45
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : Arribada PMP_V1.2-RoundHoles.TXT
+ASCII SlotHoles File : Arribada PMP_V1.2-SlotHoles.TXT
+EIA File   : Arribada PMP_V1.2.DRL
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      12mil (0.3mm)                                             Round             1312      PTH        0.00inch (0.00mm)
+T2      20mil (0.5mm)                                             Round             10        PTH        0.00inch (0.00mm)
+T3      20mil (0.5mm)                                             Slot              2         PTH        0.00inch (0.00mm)
+T4      35mil (0.889mm)                                           Round             6         PTH        0.00inch (0.00mm)
+T5      35mil (0.9mm)                                             Round             105       PTH        0.00inch (0.00mm)
+T6      39mil (1mm)                                               Round             13        PTH        0.00inch (0.00mm)
+T7      63mil (1.6mm)                                             Round             12        PTH        0.00inch (0.00mm)
+T8      79mil (2mm)                                               Round             2         PTH        0.00inch (0.00mm)
+T9      118mil (3mm)                                              Round             11        PTH        0.00inch (0.00mm)
+T10     146mil (3.7mm)                                            Round             4         PTH        0.00inch (0.00mm)
+T11     197mil (5mm)                                              Round             1         PTH        0.00inch (0.00mm)
+T12     28mil (0.7mm)                                             Round             2         NPTH       0.00inch (0.00mm)
+T13     39mil (0.995mm)                                           Round             3         NPTH       0.00inch (0.00mm)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              1483
+
+Total Processing Time (hh:mm:ss) : 00:00:01
