@@ -1,0 +1,3 @@
+Layer Pairs Export File for PCB: D:\SynologyDrive\SynologyDrive\Arribada-APMP\Electronics\02_PCB\Arribada-PMP-PCB.PcbDoc
+LayersSetName=Top_Bot_Thru_Holes|DrillFile=arribada pmp_v1.2-roundholes.txt|DrillLayers=gtl,gbl
+LayersSetName=Top_Bot_Slot_Holes|DrillFile=arribada pmp_v1.2-slotholes.txt|DrillLayers=gtl,gbl

@@ -3,7 +3,7 @@
 
 Arribada Penguin Monitoring Platform (APMP) is a standalone device featuring a Raspberry Pi and a Raspberry Pi Camera Module with a number of additonal features. The below image is of previous version to form the list of necessary changes.
 
-<img src="https://github.com/IRNAS/arribada-pmp/blob/development-v2/pics/DSC_4310.JPG"  width="850px">
+<img src="/pics/DSC_4310.JPG"  width="850px">
 
 ## Block diagram
 Block diagram below shows the key features of Arribada PMP device. Device captures photos or video, measure temperature, humidity and air pressure, capture locations and charge batteries with solar cells. Penguin Monitoring Platform can communicates with LoRa and Rock Block or Lacuna.

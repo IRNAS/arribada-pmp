@@ -1,0 +1,14 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 15:03:27 On 09/02/2021
+
+Output: BOM_FARNELL
+Type  : BOM
+From  : Variant [BASIC] of Project [Arribada-PMP.PrjPCB]
+   Generated File[Arribada PMP_V1.2_BOM_FARNELL.xlsx]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 15:03:34 On 09/02/2021
